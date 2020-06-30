@@ -1,0 +1,398 @@
+body{
+    min-height: 100%;
+}
+
+.main
+{
+    min-height: 70%;
+    width: 1000px;
+    margin: 40px auto 2px;
+}
+
+.main .main_part
+{
+    margin: 0 1% 30px;
+    display: inline-block;
+
+    color: #777777;
+    width: 48%;
+
+    padding-bottom: 25px;
+    border:1px solid #96C2F1;
+    /*background-color:#EFF7FF;*/
+}
+
+.main .main_part .main_part_top
+{
+    width: 100%;
+    height: 67px;
+}
+
+.main .main_part .main_part_top .kj
+{
+    font-size: 22px;
+    font-weight: 300;
+
+    float: left;
+
+    width: 110px;
+    margin: 22px 0 0 23px;
+
+    color: #1687d9;
+}
+
+.main .main_part .main_part_top .more
+{
+    font-size: 12px;
+
+    float: right;
+
+    margin: 28px 19px 0 0;
+
+    letter-spacing: -0.2px;
+
+    color: #4d4d4d;
+}
+
+.main .main_part .main_part_nav
+{
+    margin: 0 0 0 23px;
+}
+
+.main .main_part .main_part_nav ul li
+{
+    font-size: 14px;
+
+    margin: 16.7px 0;
+}
+
+.main .main_part .main_part_nav ul li:first-child
+{
+    margin-top: 0;
+}
+
+.main .main_part .main_part_nav ul li a
+{
+    color: #4d4d4d;
+    text-decoration: none;
+}
+
+.main .main_part .main_part_nav ul li a:hover
+{
+    color: #337ab7;
+    text-decoration: none;
+}
+
+.classes a
+{
+    display: inline-block;
+    text-decoration: none;
+    width: 90%;
+    height: 80px;
+    margin: 20px 5% 0;
+}
+
+.classes .classess
+{
+    line-height: 80px;
+
+    width: 100%;
+    height: 80px;
+
+    border: 1px #e4f0ed solid;
+    box-shadow: 0 0 1px 2px #f7f7f7;
+}
+
+.classes .classess:hover
+{
+    color: #ffffff;
+    background: lightgray;
+}
+
+.classes .classess a:hover{
+    text-decoration: none;
+}
+
+.classes:hover span::before
+{
+    color: #ffffff;
+}
+
+.classes a:nth-child(1)  span::before
+{
+    font-size: 36px;
+    font-weight: lighter;
+    line-height: 77px;
+    text-decoration: none;
+    float: left;
+
+    margin-right: 17px;
+    margin-left: 21.3px;
+
+    content: '01';
+
+    color: #1687d9;
+}
+
+.classes a:nth-child(2)  span::before
+{
+    font-size: 36px;
+    font-weight: lighter;
+    line-height: 77px;
+    text-decoration: none;
+    float: left;
+
+    margin-right: 17px;
+    margin-left: 21.3px;
+
+    content: '02';
+
+    color: #1687d9;
+}
+
+.classes a:nth-child(3)  span::before
+{
+    font-size: 36px;
+    font-weight: lighter;
+    line-height: 77px;
+    text-decoration: none;
+    float: left;
+
+    margin-right: 17px;
+    margin-left: 21.3px;
+
+    content: '03';
+
+    color: #1687d9;
+}
+
+.classes a:nth-child(4)  span::before
+{
+    font-size: 36px;
+    font-weight: lighter;
+    line-height: 77px;
+    text-decoration: none;
+    float: left;
+
+    margin-right: 17px;
+    margin-left: 21.3px;
+
+    content: '04';
+
+    color: #1687d9;
+}
+
+.classes a:nth-child(5)  span::before
+{
+    font-size: 36px;
+    font-weight: lighter;
+    line-height: 77px;
+    text-decoration: none;
+    float: left;
+
+    margin-right: 17px;
+    margin-left: 21.3px;
+
+    content: '05';
+
+    color: #1687d9;
+}
+
+.course a
+{
+    display: inline-block;
+    text-decoration: none;
+    width: 90%;
+    height: 80px;
+    margin: 20px 5% 0;
+}
+
+.course a:hover{
+    text-decoration: none;
+}
+
+.course .courses
+{
+    line-height: 80px;
+
+    width: 100%;
+    height: 80px;
+
+    border: 1px #e4f0ed solid;
+    box-shadow: 0 0 1px 2px #f7f7f7;
+}
+
+.course .courses:hover
+{
+    color: #ffffff;
+    background: lightgray;
+}
+
+.course .courses:hover span::before
+{
+    color: #ffffff;
+}
+
+.course a:nth-child(1)  span::before
+{
+    font-size: 36px;
+    font-weight: lighter;
+    line-height: 77px;
+    text-decoration: none;
+    float: left;
+
+    margin-right: 17px;
+    margin-left: 21.3px;
+
+    content: '01';
+
+    color: #1687d9;
+}
+
+.course a:nth-child(2)  span::before
+{
+    font-size: 36px;
+    font-weight: lighter;
+    line-height: 77px;
+    text-decoration: none;
+    float: left;
+
+    margin-right: 17px;
+    margin-left: 21.3px;
+
+    content: '02';
+
+    color: #1687d9;
+}
+
+.course a:nth-child(3)  span::before
+{
+    font-size: 36px;
+    font-weight: lighter;
+    line-height: 77px;
+    text-decoration: none;
+    float: left;
+
+    margin-right: 17px;
+    margin-left: 21.3px;
+
+    content: '03';
+
+    color: #1687d9;
+}
+
+.sign{
+    line-height: 150px;
+    border-radius: 75px;
+    float: left;
+
+    width: 48%;
+    height: 150px;
+
+    border: 1px #e4f0ed solid;
+    box-shadow: 0 0 1px 2px #f7f7f7;
+}
+
+.sign a
+{
+    display: inline-block;
+    float: left;
+    text-decoration: none;
+    width: 100%;
+    height: 150px;
+}
+
+.sign a:hover
+{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.sign:hover
+{
+    color: #ffffff;
+    background: lightgray;
+}
+
+.sign p{
+    font-size: 50px;
+    text-align: center;
+    margin: 0;
+}
+
+.signInfo{
+    line-height: 150px;
+    border-radius: 75px;
+    float: right;
+
+    width: 48%;
+    height: 150px;
+
+    border: 1px #e4f0ed solid;
+    box-shadow: 0 0 1px 2px #f7f7f7;
+}
+
+.signInfo a
+{
+    display: inline-block;
+    float: left;
+    text-decoration: none;
+    width: 100%;
+    height: 80px;
+}
+
+.signInfo a:hover
+{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.signInfo:hover
+{
+    color: #ffffff;
+    background: lightgray;
+}
+
+.signInfo p{
+    font-size: 35px;
+    text-align: center;
+    margin: 0;
+}
+
+.but{
+    line-height: 150px;
+    border-radius: 75px;
+    display: inline-block;
+    width: 30%;
+    height: 150px;
+    margin: 0 1.5% 20px;
+    border: 1px #e4f0ed solid;
+    box-shadow: 0 0 1px 2px #f7f7f7;
+}
+
+.but a
+{
+    display: inline-block;
+    float: left;
+    text-decoration: none;
+    width: 100%;
+    height: 80px;
+}
+
+.but a:hover
+{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.but:hover
+{
+    color: #ffffff;
+    background: lightgray;
+}
+
+.but p{
+    font-size: 35px;
+    text-align: center;
+    margin: 0;
+}
