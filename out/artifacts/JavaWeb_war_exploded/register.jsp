@@ -24,7 +24,7 @@
 
         #wrap .logGet {
             height: 600px;
-            width: 368px;
+            width: 450px;
             background-color: #FFFFFF;
         }
 
