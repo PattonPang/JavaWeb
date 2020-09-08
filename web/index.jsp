@@ -125,6 +125,10 @@
                 <input type="text" class="form-control" id="inputEmail3" name="username" value="${param.username}" placeholder="Username" style="width: 50%">
             </div>
             <div class="lgD">
+                <label style="width: 60px;display: inline-block;margin-left: 20px;">密码：</label>
+                <input type="password" class="form-control" id="inputPassword3" name="passWd" placeholder="Password" style="width: 50%">
+            </div>
+            <div class="lgD">
                 <label style="width: 60px;display: inline-block;margin-left: 20px;">身份：</label>
                 <select name="user" class="btn btn-default dropdown-toggle">
                     <option value="admins">管理员</option>
@@ -132,10 +136,6 @@
                     <option value="teacher">老师</option>
                 </select>
                 <br/>
-            </div>
-            <div class="lgD">
-                <label style="width: 60px;display: inline-block;margin-left: 20px;">密码：</label>
-                <input type="password" class="form-control" id="inputPassword3" name="passWd" placeholder="Password" style="width: 50%">
             </div>
             <span id="msg" style="color: #ff0000;display: block;text-align: center;">${msg}</span>
             <div class="logC">

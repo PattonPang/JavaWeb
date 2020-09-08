@@ -55,7 +55,7 @@ public class LoginServlet extends HttpServlet {
                 request.setAttribute("msg", "账号或密码错误！");
                 request.getRequestDispatcher("index.jsp").forward(request, response);
             }
-        }else{
+        }else if("teacher".equals(user)){
             Teachers teachers = WebUtils.paramsToBean(request, new Teachers());
             TeachersService teacherService = new TeachersServiceImpl();
             teachers = teacherService.login(teachers);
