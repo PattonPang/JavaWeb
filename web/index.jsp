@@ -1,151 +1,87 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: 11322
+  Date: 2020/9/7
+  Time: 22:51
+  To change this template use File | Settings | File Templates.
+--%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>欢迎来到登录页面</title>
-    <jsp:include page="pages/public/base.jsp"/>
-    <script type="text/javascript">
-        $(function () {
-            $("#login").click(function () {
-                const username = $("#inputEmail3").val();
-                const passWd = $("#inputPassword3").val();
-                $("#msg").text("");
-                const msg = $("#msg");
-                if (username ===''){
-                    msg.text('账号不能为空');
-                    return false;
-                }
-                if (passWd ===''){
-                    msg.text('密码不能为空');
-                    return false;
-                }
-            })
-        })
-    </script>
-    <style type="text/css">
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        #wrap {
-            height: 100%;
-            background-image: url(static/image/LoginBack.png);
-            background-repeat: no-repeat;
-            background-position: center center;
-            position: relative;
-            padding-top: 7%;
-        }
-
-        #wrap .logGet {
-            height: 500px;
-            width: 368px;
-            background-color: #FFFFFF;
-        }
-
-        .logGet {
-            margin: 0 auto;
-        }
-
-        .logC a button {
-            width: 100%;
-            height: 45px;
-            background-color: #ee7700;
-            border: none;
-            color: white;
-            font-size: 18px;
-        }
-
-        .logC .reg {
-            display: block;
-            width: 100%;
-            height: 45px;
-            background-color: #ee7700;
-            border: none;
-            color: white;
-            font-size: 18px;
-            text-align: center;
-            text-decoration: none;
-            margin-top: 30px;
-            line-height: 45px;
-        }
-
-        .logGet .logD.logDtip .p1 {
-            display: inline-block;
-            font-size: 28px;
-            margin-top: 30px;
-            width: 86%;
-        }
-
-        #wrap .logGet .logD.logDtip {
-            width: 86%;
-            border-bottom: 1px solid #ee7700;
-            margin-bottom: 60px;
-            margin-top: 0px;
-            margin-right: auto;
-            margin-left: auto;
-        }
-
-        .logGet .lgD img {
-            top: 12px;
-            left: 8px;
-        }
-
-        .logGet .lgD input {
-            display: inline-block;
-            width: 100%;
-            height: 42px;
-        }
-
-        #wrap .logGet .lgD {
-            width: 86%;
-            position: relative;
-            margin: 30px auto;
-        }
-
-        #wrap .logGet .logC {
-            width: 86%;
-            margin-top: 0px;
-            margin-right: auto;
-            margin-bottom: 0px;
-            margin-left: auto;
-        }
-    </style>
+	<title>index</title>
+	<link rel="stylesheet" href="static/layui/css/layui.css"/>
+	<script src="static/layui/layui.all.js"></script>
+	<style>
+		
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		
+		.wrap {
+			height: 100%;
+			background-image: url(static/image/LoginBack.png);
+			background-repeat: no-repeat;
+			background-position: center center;
+			position: relative;
+			padding-top: 7%;
+		}
+	</style>
 </head>
 <body>
-<div class="wrap" id="wrap">
-    <div class="logGet">
-        <!-- 头部提示信息 -->
-        <div class="logD logDtip">
-            <p class="p1">登录</p>
-        </div>
-        <!-- 输入框 -->
-        <form action="LoginServlet" method="post">
-            <div class="lgD">
-                <label style="width: 60px;display: inline-block;margin-left: 20px;">用户名：</label>
-                <input type="text" class="form-control" id="inputEmail3" name="username" value="${param.username}" placeholder="Username" style="width: 50%">
-            </div>
-            <div class="lgD">
-                <label style="width: 60px;display: inline-block;margin-left: 20px;">密码：</label>
-                <input type="password" class="form-control" id="inputPassword3" name="passWd" placeholder="Password" style="width: 50%">
-            </div>
-            <div class="lgD">
-                <label style="width: 60px;display: inline-block;margin-left: 20px;">身份：</label>
-                <select name="user" class="btn btn-default dropdown-toggle">
-                    <option value="admins">管理员</option>
-                    <option value="students">学生</option>
-                    <option value="teacher">老师</option>
-                </select>
-                <br/>
-            </div>
-            <span id="msg" style="color: #ff0000;display: block;text-align: center;">${msg}</span>
-            <div class="logC">
-                <a href="pages/student/Home.jsp" target="_self">
-                    <button type="submit" id="login">登 录</button>
-                </a>
-                <a class="reg" href="RegisterServlet?method=getAllClassesStu">注 册</a>
-            </div>
-        </form>
-    </div>
+<div class="wrap">
+	<div style="margin:30px auto 0;width: 450px;border: 1px solid #c6c6c6;padding: 10px 0 0;background: white;">
+		<fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+			<legend>登陆</legend>
+		</fieldset>
+		<form class="layui-form" action="LoginServlet" method="post" style="padding: 0 50px 30px 10px;">
+			<div class="layui-form-item">
+				<label class="layui-form-label">用户名</label>
+				<div class="layui-input-block">
+					<input type="text" name="username" value="${param.username}" lay-verify="required"
+					       lay-reqtext="用户名是必填项，岂能为空？" placeholder="请输入用户名"
+					       class="layui-input">
+				</div>
+			</div>
+			<div class="layui-form-item">
+				<label class="layui-form-label">密码</label>
+				<div class="layui-input-block">
+					<input type="password" name="passWd" lay-verify="pass" placeholder="请输入密码" class="layui-input">
+				</div>
+			</div>
+			<div class="layui-form-item">
+				<label class="layui-form-label">选择身份</label>
+				<div class="layui-input-block">
+					<input style="width: 100%;" type="radio" name="user" value="admins" title="管理员" checked="">
+					<input style="width: 100%;" type="radio" name="user" value="students" title="学生">
+					<input style="width: 100%;" type="radio" name="user" value="teacher" title="老师">
+				</div>
+			</div>
+			<div class="layui-form-item">
+				<div class="layui-input-block">
+					<button type="submit" class="layui-btn" lay-submit="">立即提交</button>
+					<a class="layui-btn" href="RegisterServlet?method=getAllClassesStu">注 册</a>
+				</div>
+			</div>
+		</form>
+	</div>
 </div>
+<script>
+	layui.use(['form', 'layedit'], function () {
+		var form = layui.form
+				, layer = layui.layer
+				, layedit = layui.layedit
+				, laydate = layui.laydate;
+		form.render();
+		
+		//自定义验证规则
+		form.verify({
+			pass: [
+				/^[\S]{6,12}$/
+				, '密码必须6到12位，且不能出现空格'
+			]
+		});
+	});
+</script>
 </body>
 </html>

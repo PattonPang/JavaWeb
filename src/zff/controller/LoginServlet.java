@@ -22,6 +22,9 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
+/**
+ * @author zff
+ */
 @WebServlet(name = "LoginServlet",value = "/LoginServlet")
 public class LoginServlet extends HttpServlet {
     @Override

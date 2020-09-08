@@ -7,7 +7,6 @@ $(function () {
     if(only == "MyInfo"){
         $("#myInfo").addClass("active");
     }
-
     if(only == "CoursesManage"){
         $("#coursesManage").addClass("active");
     }
